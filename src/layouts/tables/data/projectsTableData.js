@@ -18,6 +18,17 @@ import logoSpotify from "assets/images/small-logos/logo-spotify.svg";
 import logoInvesion from "assets/images/small-logos/logo-invision.svg";
 
 export default function data() {
+  // const [data, setData] = useState([])
+
+  // useEffect(() => {
+  //   // invalid url will trigger an 404 error
+  //   axios.get('http://localhost:5000/api/v1/products').then((response) => {
+  //     setData(response.allProducts);
+  //   }).catch(error => {
+  //     setError(error);
+  //   });
+  // }, []);
+  // console.log(data);
   const Project = ({ image, name }) => (
     <MDBox display="flex" alignItems="center" lineHeight={1}>
       <MDAvatar src={image} name={name} size="sm" variant="rounded" />
